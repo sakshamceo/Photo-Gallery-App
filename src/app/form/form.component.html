@@ -1,0 +1,16 @@
+<div class="form-template">
+    <form (ngSubmit)="buttonWork()" [formGroup]="newEntry">
+      <div class="form-group">
+        <label for="title" class="label">Title</label>
+        <input type="text" id="title" placeholder="Enter Title" formControlName="title" class="input-field">
+      </div>
+      
+      <div class="form-group">
+        <label for="link" class="label">Link</label>
+        <input type="text" id="link" placeholder="Enter Link" formControlName="link" class="input-field">
+      </div>
+  
+      <button type="submit" [disabled]="newEntry.invalid" class="submit-button">Send</button>
+    </form>
+  </div>
+  

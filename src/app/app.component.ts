@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Article } from './app.component.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Photo-Gallery';
+  article: Article[]=[];
+  appendData(newArticle: Article) {
+    this.article.push(newArticle);
+    console.log('Updated list:', this.article);
+  }
 }

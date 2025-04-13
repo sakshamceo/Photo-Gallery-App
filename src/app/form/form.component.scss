@@ -1,0 +1,70 @@
+.form-template {
+    max-width: 500px;  /* Makes the form width a bit more manageable */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .input-field {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  
+    &:focus {
+      border-color: #007BFF; /* Change border color on focus */
+    }
+  
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+  
+  .submit-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0056b3; /* Darken the button on hover */
+    }
+  
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .form-template {
+      padding: 15px;
+      width: 90%;
+    }
+  
+    .input-field, .submit-button {
+      font-size: 0.9rem;
+    }
+  }
+  
